@@ -9,7 +9,7 @@ import tensorflow as tf
 
 app = FastAPI()
 
-MODEL = tf.keras.models.load_model("D:\\Project\\Potato-disease\\models\\1")
+MODEL = tf.keras.models.load_model("model.keras")
 
 CLASS_NAMES = ["Early Blight", "Late Blight", "Healthy"]
 
