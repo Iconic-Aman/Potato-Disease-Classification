@@ -13,10 +13,6 @@ MODEL = tf.keras.models.load_model("model.keras")
 
 CLASS_NAMES = ["Early Blight", "Late Blight", "Healthy"]
 
-@app.get("/ping")
-async def ping():
-    return "Hello, I am alive"
-
 def read_file_as_image(data) -> np.ndarray:
     image = np.array(Image.open(BytesIO(data)))
     return image
